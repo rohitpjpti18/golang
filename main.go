@@ -6,8 +6,11 @@ import (
 	)
 
 func main(){
-	fmt.Println("Running from the main method\n")
-	fmt.Println("go-loop :")
-	fmt.Println("goArray: ")
-	basics.goArray()
+	arr := [...]int{1, 2, 3}
+
+
+	fmt.Println("Running from the main method")
+	basics.BasicArray()
+	basics.CompareArrayExample()
+	basics.PassArrayByPointer(&arr)
 }
