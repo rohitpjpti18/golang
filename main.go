@@ -1,9 +1,13 @@
 package main
 
-//import "fmt"
+import (
+	"fmt"
+	"github.com/rohitpjpti18/golang-practices/basics"
+	)
 
-/*
 func main(){
-	fmt.Println()
+	fmt.Println("Running from the main method\n")
+	fmt.Println("go-loop :")
+	fmt.Println("goArray: ")
+	basics.goArray()
 }
-*/
