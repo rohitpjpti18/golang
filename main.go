@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/rohitpjpti18/golang-practices/basics"
+	"github.com/rohitpjpti18/golang/basics"
 	)
 
 func main(){
@@ -13,4 +13,7 @@ func main(){
 	basics.BasicArray()
 	basics.CompareArrayExample()
 	basics.PassArrayByPointer(&arr)
+	basics.BasicSlice()
+	basics.AppendSlice()
+	basics.ReverseUsingPointer()
 }
