@@ -45,8 +45,26 @@ func (l *LinkedList) InsertData(Data int) bool {
 	return true
 }
 
+func (l *LinkedList) Delete(Data int) bool {
+	var tempNode LinkedListNode
+	tempNode.Data = -1
+	tempNode.Next = l.Head
+	l.Head = &tempNode
 
-func (l *LinkedList)
+	ptr := l.Head
+	for ptr.Next != nil {
+		if ptr.Next.Data == Data {
+			ptr.Next = ptr.Next.Next
+			l.Head = l.Head.Next
+			return true
+		} else {
+			ptr = ptr.Next
+		}
+	}
+	l.Head = l.Head.Next
+
+	return false
+}
 
 func (l *LinkedList) PrintList() {
 	var ptr *LinkedListNode = l.Head

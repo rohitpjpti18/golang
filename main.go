@@ -17,4 +17,7 @@ func main() {
 	ll.PrintList()
 	ll.InsertData(4)
 	ll.PrintList()
+
+	ll.Delete(3)
+	ll.PrintList()
 }
